@@ -1,0 +1,539 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+body {
+  font-family: "Raleway";
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.active-nav {
+  background-color: #fff;
+}
+
+.active-nav .logo a,
+.active-nav .nav li a {
+  color: #336699;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.navbar.scroll {
+  background-color: white;
+}
+
+.navbar .logo a {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px 0;
+  display: flex;
+  margin-top: 10px;
+}
+
+.navbar .nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav ul li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  padding: 8px 30px;
+}
+
+.navbar .nav ul li a:hover {
+  background-color: #336699;
+  padding: 8px 30px;
+}
+
+.navbar .button {
+  margin-top: 20px;
+}
+
+.navbar .button a {
+  background-color: #336699;
+  color: white;
+  text-decoration: none;
+  padding: 8px 30px;
+}
+
+.section-hero {
+  background-image: url("../images/banner-bg.jpg");
+  background-color: #222;
+  background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 375px;
+  position: relative;
+  background-size: cover;
+  padding-top: 16%;
+  background-attachment: fixed;
+}
+
+.section-hero .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  color: white;
+}
+
+.section-hero .content h1 {
+  font-size: 56px;
+  text-shadow: 2px 2px 2px #333;
+}
+
+.section-hero .content p {
+  text-shadow: 2px 2px 2px #333;
+  font-size: 24px;
+  width: 27%;
+  text-align: center;
+}
+
+.section-hero .content a {
+  color: #FFF;
+  cursor: pointer;
+  background: #336699;
+  padding: 15px 40px;
+  transition: all 0.3s ease;
+  margin-top: 140px;
+}
+
+.section-hero .content a:hover {
+  color: #FFF;
+  background: #37A;
+  padding: 20px 50px;
+}
+
+.what-we-do {
+  padding: 80px 150px 40px 150px;
+}
+
+.what-we-do h1 {
+  color: #3377aa;
+  font-size: 41.6px;
+  margin-bottom: 24px;
+  font-weight: normal;
+}
+
+.what-we-do p {
+  font-size: 19.2px;
+  color: #707070;
+  line-height: 1.9;
+}
+
+.whatwedo-points {
+  display: flex;
+  padding: 0 150px;
+}
+
+.mt {
+  margin-top: 40px;
+  margin-bottom: 90px;
+}
+
+.whatwedo-points .description {
+  display: flex;
+  width: 608px;
+}
+
+.description .icons i {
+  font-size: 40px;
+  color: #336699;
+}
+
+.description .explanation {
+  padding: 0 40px;
+}
+
+.description .explanation h2 {
+  color: #3377aa;
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.description .explanation p {
+  font-size: 19.2px;
+  color: #707070;
+  line-height: 1.9;
+}
+
+.mb {
+  margin-bottom: 40px;
+}
+
+.description .explanation a {
+  color: #FFF;
+  cursor: pointer;
+  background: #336699;
+  padding: 14px 30px;
+  font-size: 19px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.testimonials {
+  background-image: url("../images/bg-2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.testimonials, .contact .content {
+  color: white;
+  text-align: center;
+  padding: 100px 100px 50px 100px;
+}
+
+.testimonials, .contact .content h2 {
+  font-size: 41px;
+  font-weight: normal;
+}
+
+.testimonials, .contact .content p {
+  font-size: 19px;
+  font-weight: normal;
+}
+
+.testimonials .testimoni {
+  overflow: hidden;
+}
+
+.testimonials .four-testimonials {
+  display: flex;
+  color: white;
+  width: 133%;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.testimonials .four-testimonials .tp {
+  position: relative;
+}
+
+.testimonials .indicator {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 80px;
+}
+
+.testimonials .indicator .btn {
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 4px;
+  border-radius: 15px;
+}
+
+.four-testimonials .tp img {
+  border-radius: 50%;
+}
+
+.four-testimonials .tp figcaption {
+  margin-top: 20px;
+}
+
+.gallery {
+  padding: 80px 80px;
+  text-align: center;
+}
+
+.gallery .content h2 {
+  color: #3377aa;
+  font-size: 41px;
+  font-weight: normal;
+}
+
+.gallery .content p {
+  color: #707070;
+  font-size: 19px;
+}
+
+.gallery-slide img {
+  margin: 10px;
+}
+
+.contact {
+  background-image: url("../images/bg3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.contact-detail {
+  display: flex;
+  margin: 0 200px;
+}
+
+.contact-detail form input {
+  border: 1px solid white;
+  border-radius: 4px;
+  background: transparent;
+  padding: 20px;
+  margin: 10px;
+  width: 450px;
+}
+
+.contact-detail form input::-moz-placeholder {
+  color: white;
+  font-size: 19px;
+}
+
+.contact-detail form input:-ms-input-placeholder {
+  color: white;
+  font-size: 19px;
+}
+
+.contact-detail form input::placeholder {
+  color: white;
+  font-size: 19px;
+}
+
+.contact-detail form textarea {
+  border: 1px solid white;
+  border-radius: 4px;
+  background: transparent;
+  padding: 20px;
+  margin: 10px;
+  width: 450px;
+  height: 250px;
+}
+
+.contact-detail form textarea::-moz-placeholder {
+  color: white;
+  font-size: 19px;
+}
+
+.contact-detail form textarea:-ms-input-placeholder {
+  color: white;
+  font-size: 19px;
+}
+
+.contact-detail form textarea::placeholder {
+  color: white;
+  font-size: 19px;
+}
+
+.contact-detail form button {
+  background-color: #336699;
+  color: white;
+  font-size: 17px;
+  padding: 15px 80px;
+  margin: 20px 20px 20px 10px;
+  border: none;
+  border-radius: 4px;
+  width: 350px;
+}
+
+.contact .social {
+  margin-top: 20px;
+  margin-left: 90px;
+}
+
+.contact .social div {
+  margin-bottom: 60px;
+}
+
+.contact .social a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.contact .social a i {
+  font-size: 40px;
+}
+
+.contact .social a span {
+  margin: 0 20px;
+}
+
+.contact .copyright {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+footer {
+  background-color: white;
+  color: white;
+  margin: 40px;
+}
+
+.bg-login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/banner-bg.jpg");
+}
+
+.login-form {
+  padding: 50px;
+  border-radius: 5px;
+  background-color: #336699;
+}
+
+.login-form form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  width: 350px;
+  margin: 20px;
+  outline: none;
+}
+
+.login-form form input::-moz-placeholder {
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+}
+
+.login-form form input:-ms-input-placeholder {
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+}
+
+.login-form form input::placeholder {
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+}
+
+.login-form form label {
+  float: right;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-form .logo {
+  text-align: center;
+  font-size: 41px;
+}
+
+.login-form .logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.login-form .submit {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.login-form .submit a {
+  text-decoration: none;
+  color: #707070;
+  background-color: white;
+  border-radius: 22px;
+  padding: 8px 35px;
+}
+
+.login-form .signup {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-form .signup a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+
+.login-form .icons {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.login-form .icons a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 15px 5px;
+}
+
+.box {
+  margin: 15px;
+  box-shadow: 0px 0px 12px 0px #336699;
+}
+
+.bg img {
+  width: 100%;
+}
+
+.signup-form {
+  padding: 50px 0px;
+}
+
+.signup-form form div {
+  display: table-caption;
+}
+
+.signup-form {
+  margin: 4px;
+  padding: 60px 15px;
+}
+
+.signup-form h3 {
+  font-size: 32px;
+  color: #336699;
+  margin-bottom: 35px;
+  font-weight: bold;
+}
+
+.signup-form form div {
+  margin-top: 15px;
+}
+
+.signup-form form .name, .password, .email, .gender, .mob, .status {
+  margin: 0px;
+}
+
+.signup-form form .name, .password, .email, .mob, label {
+  color: #336699;
+  font-size: 19px;
+  margin: 0;
+}
+
+.signup-form form .name, .password, .email, .mob, input {
+  border: none;
+  border-bottom: 1px solid #3377aa;
+  outline: none;
+}
+
+.signup-form form .confirm {
+  margin-top: 30px;
+}
+
+.signup-form form .confirm a {
+  background-color: #336699;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 25px;
+}/*# sourceMappingURL=main.css.map */
